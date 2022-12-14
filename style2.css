@@ -124,23 +124,33 @@ nav .navbar .menu a {
 
 
 .articles {
-    border: 1px solid red;
-    height: 40rem;
-}
-
-.card_holder {
+    /* border: 1px solid red; */
     display: flex;
-    border: 1px solid lime;
     height: 40rem;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    align-items: center;
 
 }
 
 .card {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    text-align: center;
+    width: 20rem;
+    height: 30rem;
+    overflow: hidden;
+}
 
-    
+.card p {
+    font-size: 1rem;
+}
+
+.separ {
+    position: relative;
+    background: #2c3e50;
+    height: .2vh;
+    width: 75%;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
 }
 
 @media only screen and (min-width: 2000px) {
@@ -151,12 +161,39 @@ nav .navbar .menu a {
 }
 
 footer {
-    background-color: #22223b;
+    background-color: #2a9d8f;
     font-family: 'Lato', sans-serif;
-    color: white;
+    color: #22333b;
     text-align: center;
-    height: 10vh;
+    height: 315px;
     padding: 5px;
+    position: relative;
+}
+
+.contact-info {
+    position: relative;
+    margin-top: 8rem;
+    line-height: 1rem;
+}
+
+.custom-shape-divider-top-1671000373 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1671000373 svg {
+    position: relative;
+    display: block;
+    width: calc(226% + 1.3px);
+    height: 315px;
+}
+
+.custom-shape-divider-top-1671000373 .shape-fill {
+    fill: #FFFFFF;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -184,8 +221,9 @@ footer {
     }
     
     .headshot {
-        width: 300px;
-        border-radius: 150px;
+        width: 250px;
+        border-radius: 50%;
+        margin-top: 10rem;
     }
 
     .hero-itself {
@@ -196,8 +234,7 @@ footer {
         order: 2;
     }
 
-    .card_holder {
+    .articles {
         flex-direction: column;
-        justify-content: space-evenly;
     }
 }
